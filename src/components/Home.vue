@@ -14,7 +14,7 @@
         </section>
 
         <section class="home-image">
-            <img src="img/den-2.png">
+            <img src="img/artdot2.png">
         </section>
 
     </div>
@@ -110,8 +110,9 @@
             background-color: transparent;
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: flex-end;
+
 
 
 
@@ -119,7 +120,6 @@
                 width: auto;
                 width: 100%;
                 height: auto;
-                opacity: 0.65;
 
             }
         }
