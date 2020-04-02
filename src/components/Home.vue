@@ -8,8 +8,8 @@
             <TypeEffect></TypeEffect>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque dolor dolores esse natus necessitatibus provident quam quas rem.</p>
             <div class="home-text-button">
-                <button class="btn btn-dark">Button 1</button>
-                <button class="btn btn-dark">Button 2</button>
+                <button class="btn button-dark">Button 1</button>
+                <button class="btn button-light">Button 2</button>
             </div>
         </section>
 
@@ -79,6 +79,26 @@
                 & button {
                     margin-right: 10px;
                 }
+
+                & .button-dark {
+                    background-color: #d9832e;
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 600;
+                    border-radius: 0px;
+                    padding: 10px 20px;
+                }
+
+                & .button-light {
+                    border: 2px solid #d9832e;
+                    color:#d9832e ;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 600;
+                    border-radius: 0px;
+                    padding: 10px 20px;
+                }
             }
          }
 
@@ -99,6 +119,7 @@
                 width: auto;
                 width: 100%;
                 height: auto;
+                opacity: 0.65;
 
             }
         }
