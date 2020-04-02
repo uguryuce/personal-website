@@ -14,8 +14,8 @@
         </section>
 
         <section class="home-image">
-            <img src="img/artdot2.png">
-        </section>
+        <img src="img/artdot2.png">
+    </section>
 
     </div>
 
@@ -39,7 +39,7 @@
 
 <style lang="scss">
     .home {
-        background-color: #eaedf2;
+        background-color: #fbfbfd;
         margin-left: 95px;
         width: calc(100% - 95px);
         height: 100vh;
@@ -107,7 +107,7 @@
         &-image {
             width: 45%;
             height: 100vh;
-            background-color: transparent;
+            //background-color: #eaedf2;;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -126,6 +126,14 @@
 
 
 
+
+    }
+
+    @media (min-width: 1500px){
+        .home {
+            margin-left: 295px;
+            width: calc(100% - 295px);
+        }
 
     }
 

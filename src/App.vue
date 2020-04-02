@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background-color: #eaedf2;">
 
     <SideNav></SideNav>
 
