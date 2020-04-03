@@ -14,7 +14,30 @@
         </section>
 
         <section class="home-image">
-        <img src="img/artdot2.png">
+        <!-- <img src="img/artdot2.png"> -->
+            <div class="home-image-block a1">
+                <div class="home-image-block-text">
+                    <i class="fa fa-github"></i>
+                </div>
+                <h3>Github</h3>
+
+            </div>
+
+            <div class="home-image-block a2">
+                <div class="home-image-block-text">
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <h3>Linkedin</h3>
+
+            </div>
+
+            <div class="home-image-block a3">
+                <div class="home-image-block-text">
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <h3>Twitter</h3>
+
+            </div>
     </section>
 
     </div>
@@ -103,7 +126,7 @@
          }
 
 
-
+/*
         &-image {
             width: 45%;
             height: 100vh;
@@ -123,7 +146,91 @@
 
             }
         }
+*/
 
+        &-image {
+            margin-left: 12.5%;
+            width: 17.5%;
+            height: 100vh;
+            background-color: rgba(255,255,255,0.25);
+            display: flex;
+            -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.25);
+            -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.25);
+            box-shadow: 0px 0px 30px 0px rgba(44,62,80,0.12);
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #fdfdfd;
+
+
+            &-block {
+
+                width: 100%;
+                height: 33.33%;
+                background-color: rgba(255,255,255,0);
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    background-color: #ececec;
+                    cursor: pointer;
+                }
+
+                &-text {
+                    width: 60px;
+                    height: 60px;
+                    opacity: 0.85;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #2c3e50;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+
+                    & i {
+                        font-size: 30px;
+                        text-align: center;
+                        background-color: #2c3e50;
+                        color: white;
+
+
+                    }
+
+                }
+
+                & h3 {
+                    display: block;
+                    width: 100%;
+                    padding: 0px;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 100;
+                    letter-spacing: 1px;
+                    color: #2c3e50;
+                    margin-top: 5px;
+                }
+
+
+
+
+
+            }
+
+
+            & .a1 {
+
+            }
+            & .a2 {
+
+            }
+            & .a3 {
+
+            }
+        }
 
 
 
