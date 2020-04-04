@@ -2,24 +2,30 @@
 
   <div class="sidenav">
 
-    <div onclick="location.href='https://uguryuce.github.io'" class="sidenav-name">
+    <div class="sidenav-name">
       <a style="color: white">Ugur</a>
     </div>
 
-    <div onclick="location.href='https://uguryuce.github.io'" class="sidenav-item">
-      <i class="fa fa-home"></i>
-      <a href="#home">Home</a>
-    </div>
+    <router-link to="/">
+      <div  class="sidenav-item">
+        <i class="fa fa-home"></i>
+        <a href="#home">Home</a>
+      </div>
+    </router-link>
 
-    <div onclick="location.href='https://uguryuce.github.io'" class="sidenav-item">
-      <i class="fa fa-address-card"></i>
-      <a href="#about-me">About Me</a>
-    </div>
+    <router-link to="/about">
+      <div class="sidenav-item">
+        <i class="fa fa-address-card"></i>
+        <a href="about">About</a>
+      </div>
+    </router-link>
 
-    <div onclick="location.href='https://uguryuce.github.io'" class="sidenav-item">
-      <i class="fa fa-briefcase"></i>
-      <a href="#work">Work</a>
-    </div>
+    <router-link to="/work">
+      <div class="sidenav-item">
+        <i class="fa fa-briefcase"></i>
+        <a href="#work">Work</a>
+      </div>
+    </router-link>
 
     <div onclick="location.href='https://uguryuce.github.io'" class="sidenav-item">
       <i class="fa fa-superpowers"></i>
@@ -31,6 +37,11 @@
       <a href="#blog">Blog</a>
     </div>
 
+    <transition name="fade" mode="out-in">
+      <component :is="activeComponent"></component>
+    </transition>
+
+
   </div>
 
 </template>
@@ -38,6 +49,7 @@
 
 
 <script>
+
 
 </script>
 

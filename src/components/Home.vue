@@ -13,6 +13,8 @@
             </div>
         </section>
 
+        <!-- <section class="home-border"></section> -->
+
         <section class="home-image">
         <!-- <img src="img/artdot2.png"> -->
             <div class="home-image-block a1">
@@ -39,6 +41,7 @@
 
             </div>
     </section>
+
 
     </div>
 
@@ -67,6 +70,7 @@
         width: calc(100% - 95px);
         height: 100vh;
         display: flex;
+        align-items: center;
 
 
 
@@ -146,58 +150,79 @@
 
             }
         }
-*/
+        */
+
+        &-border {
+            width: 2px;
+            opacity: 0.7;
+            margin-left: calc(10% - 3px);
+            height: 65vh;
+            background-image: linear-gradient(#fbfbfd, #2c3e50, #fbfbfd);
+            background-color: #2c3e50;
+        }
+
+
+
 
         &-image {
-            margin-left: 12.5%;
-            width: 17.5%;
+            margin-left: 15%;
+            width: 15%;
             height: 100vh;
-            background-color: rgba(255,255,255,0.25);
             display: flex;
-            -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.25);
-            -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.25);
-            box-shadow: 0px 0px 30px 0px rgba(44,62,80,0.12);
+            -webkit-box-shadow: 0px 0px 20px 0px rgba(44,62,80,0.18);
+            -moz-box-shadow: 0px 0px 20px 0px rgba(44,62,80,0.18);
+            box-shadow: 0px 0px 20px 0px rgba(44,62,80,0.20);
+            background-color: #ffffff;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
-            background-color: #fdfdfd;
 
 
             &-block {
 
                 width: 100%;
                 height: 33.33%;
-                background-color: rgba(255,255,255,0);
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                transition: background-color .6s;
+
 
                 &:hover {
-                    background-color: #ececec;
                     cursor: pointer;
+
+                    .home-image-block-text, .home-image-block-text i  {
+                        background-color: black;
+                    }
+
+                    .home-image-block h3 {
+                        color: black;
+                    }
+
                 }
 
                 &-text {
-                    width: 60px;
-                    height: 60px;
+                    width: 55px;
+                    height: 55px;
                     opacity: 0.85;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     background-color: #2c3e50;
                     border-radius: 50%;
                     margin-bottom: 10px;
+                    transition: background-color .6s;
 
                     & i {
                         font-size: 30px;
                         text-align: center;
                         background-color: #2c3e50;
                         color: white;
-
-
+                        transition: background-color .6s;
                     }
 
                 }
@@ -208,10 +233,13 @@
                     padding: 0px;
                     text-align: center;
                     font-size: 18px;
-                    font-weight: 100;
-                    letter-spacing: 1px;
+                    font-weight: 400;
+                    opacity: 0.8;
+                    letter-spacing: .5px;
                     color: #2c3e50;
-                    margin-top: 5px;
+                    margin-top: 10px;
+                    margin-bottom: 0px;
+                    transition: color .6s;
                 }
 
 
@@ -222,12 +250,17 @@
 
 
             & .a1 {
+                //justify-content: flex-start;
+                //border-left: 2px solid rgba(44,62,80,0.7);
 
             }
             & .a2 {
-
+                //justify-content: center;
+                //border-left: 2px solid rgba(44,62,80,0.7);
             }
             & .a3 {
+                //justify-content: flex-end;
+                //border-left: 2px solid rgba(44,62,80,0.7);
 
             }
         }
