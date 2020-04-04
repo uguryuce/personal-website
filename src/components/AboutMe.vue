@@ -163,7 +163,7 @@
                         width: 30px;
                         height: 30px;
                         background-color: #d98324;
-                        border-radius: 3px;
+                        border-radius: 0px;
 
                         & i {
                             color: white;
@@ -180,11 +180,17 @@
                     left: 0;
                     position: absolute;
                     z-index: 0;
-                    background-color: #e3e3e3;
+                    background-color: #f1f1f1;
+                    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+                    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+                    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+
                 }
 
             }
         }
+
+
 
         &-text {
             display: flex;
@@ -195,7 +201,7 @@
             flex-wrap: wrap;
             height: 100vh;
             background-color: transparent;
-            padding-top: 100px;
+            padding-top: 80px;
 
             &-span {
                 color: #d9832e;
