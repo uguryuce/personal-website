@@ -25,6 +25,16 @@
 
             </div>
 
+
+            <div class="home-image-block a1">
+                <div class="home-image-block-text">
+                    <i class="fa fa-paper-plane"></i>
+                </div>
+                <h3>Gmail</h3>
+
+            </div>
+
+
             <div class="home-image-block a2">
                 <div class="home-image-block-text">
                     <i class="fa fa-linkedin"></i>
@@ -182,7 +192,7 @@
             &-block {
 
                 width: 100%;
-                height: 33.33%;
+                height: 25%;
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
