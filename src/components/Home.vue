@@ -6,7 +6,7 @@
             <h4>Hello there</h4>
             <h1>Uğur Yüce</h1>
             <TypeEffect></TypeEffect>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque dolor dolores esse natus necessitatibus provident quam quas rem.</p>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque dolor dolores esse natus necessitatibus provident.</p>
             <div class="home-text-button">
                 <button class="btn button-dark">Button 1</button>
                 <button class="btn button-light">Button 2</button>

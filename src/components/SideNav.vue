@@ -2,6 +2,7 @@
 
   <div class="sidenav">
 
+
     <div class="sidenav-name">
       <a style="color: white">Ugur</a>
     </div>
@@ -36,11 +37,11 @@
       <i class="fa fa-edit"></i>
       <a href="#blog">Blog</a>
     </div>
-
+<!--
     <transition name="fade" mode="out-in">
       <component :is="activeComponent"></component>
     </transition>
-
+-->
 
   </div>
 
@@ -49,6 +50,21 @@
 
 
 <script>
+
+  /*
+  export default {
+    data () {
+      return {
+        show : false
+      }
+    },
+    methods : {
+      showChange () {
+        this.show = !this.show;
+      }
+    }
+  }
+  */
 
 
 </script>
@@ -126,5 +142,15 @@
       }
 
   }
+
+
+
+
+
+
+
+
+  /* Responsive */
+
 
 </style>

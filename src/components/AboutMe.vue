@@ -9,6 +9,8 @@
                 <h1><span>Ab</span>out Me</h1>
                 <h3>Frontend Developer in Turkey</h3>
             </div>
+            
+        
 
             <div class="about-me-image-img">
                 <div class="about-me-image-img-div">
