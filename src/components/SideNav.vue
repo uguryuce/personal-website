@@ -1,42 +1,84 @@
 <template>
-
   <div class="sidenav">
+
 
 
     <div class="sidenav-name">
       <a style="color: white">Ugur</a>
     </div>
 
-    <router-link to="/">
+
+
+    <router-link
+            class="p-0"
+            to="/"
+            active-class="activeClass"
+            exact >
       <div  class="sidenav-item">
         <i class="fa fa-home"></i>
-        <a href="#home">Home</a>
+        <a style="padding-top: 0px;" href="#home">Home</a>
       </div>
     </router-link>
 
-    <router-link to="/about">
+
+
+    <router-link
+            class="p-0"
+            to="/about"
+            active-class="activeClass"
+            exact >
+
       <div class="sidenav-item">
         <i class="fa fa-address-card"></i>
-        <a href="about">About</a>
+        <a href="#about">About</a>
       </div>
+
     </router-link>
 
-    <router-link to="/work">
+
+
+    <router-link
+            class="p-0"
+            to="/work"
+            active-class="activeClass"
+            exact >
+
       <div class="sidenav-item">
         <i class="fa fa-briefcase"></i>
         <a href="#work">Work</a>
       </div>
+
     </router-link>
 
-    <div onclick="location.href='https://uguryuce.github.io'" class="sidenav-item">
-      <i class="fa fa-superpowers"></i>
-      <a href="#skills">Skills</a>
-    </div>
 
-    <div onclick="location.href='https://uguryuce.github.io'" class="sidenav-item">
-      <i class="fa fa-edit"></i>
-      <a href="#blog">Blog</a>
-    </div>
+
+    <router-link
+            class="p-0"
+            to="/skills"
+            active-class="activeClass"
+            exact >
+
+      <div  class="sidenav-item">
+        <i class="fa fa-superpowers"></i>
+        <a href="#home">Skills</a>
+      </div>
+
+    </router-link>
+
+
+
+    <router-link
+            class="p-0"
+            to="/blog"
+            active-class="activeClass"
+            exact >
+
+      <div  class="sidenav-item">
+        <i class="fa fa-edit"></i>
+        <a href="#home">Blog</a>
+      </div>
+
+    </router-link>
 <!--
     <transition name="fade" mode="out-in">
       <component :is="activeComponent"></component>
@@ -44,8 +86,9 @@
 -->
 
   </div>
-
 </template>
+
+
 
 
 
@@ -71,7 +114,22 @@
 
 
 
+
+
 <style lang="scss">
+
+  .activeClass {
+
+    .sidenav-item {
+      //background-color: rgba(0,0,0,0.95);
+
+      a,i {
+        color: #d9832e;
+
+      }
+
+    }
+  }
 
   .sidenav {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -97,6 +155,7 @@
         justify-content: center;
         align-items: center;
         height:45px;
+        margin-bottom: 0px;
         background-color: #d9832e ;
       }
 
@@ -117,7 +176,7 @@
         cursor: pointer;
 
           & a,i {
-          color: #d9832e;
+            color: #d9832e;
         }
 
       }
