@@ -195,6 +195,7 @@
 
 
         &-text {
+            font-family: 'Avenir', Helvetica, Arial, sans-serif;
             display: flex;
             width: 60%;
             flex-direction: column;

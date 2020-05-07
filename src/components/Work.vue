@@ -2,285 +2,198 @@
     <div class="work">
 
 
-        <div class="work-block">
 
-            <div class="work-block-title">
-                <h1><span>My</span> Skills</h1>
-                <h3>Frontend Developer in Turkey</h3>
-            </div>
-
-
-            <div class="box">
-                <ul class="box box-list">
-                    <li class="box box-list-item" v-for="skill in skills">
-                        <div class="lang">{{skill.lang}} </div>
-                        <span class="percent">{{skill.percent/20}}</span>
-                        <div class="bar">
-                            <div class="progress" v-bind:style = "{'background':skill.color, 'width':skill.percent+'%'}"></div>
-
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <div class="work-title">
+            <h1><span>My</span> Work</h1>
+            <h3>Frontend Developer in Turkey</h3>
         </div>
 
 
-        <div class="work-square">
-            <div class="work-square-item flex-end">
-                <div class="work-square-item-small">
-                 
-                    <h6>Web Development</h6>
+
+        <div class="work-list">
+
+            <div class="work-list-group">
+                <div class="work-list-group-item">
+                    <img src="/img/ug-heyb.png">
+                </div>
+                <div class="work-list-group-details">
+                    <h3>Github User Information</h3>
+                    <p>Interface Design and Development </p>
                 </div>
             </div>
-            <div class="work-square-item">
-                <div class="work-square-item-small flex-end">
-                
-                    <h6>Frontend</h6>
+
+
+            <div class="work-list-group work-list-group-r">
+                <div class="work-list-group-item">
+                    <img src="/img/github-user.png">
+                </div>
+                <div class="work-list-group-details work-list-group-r-details-r">
+                    <h3>Github User Information</h3>
+                    <p>Interface Design and Development </p>
                 </div>
             </div>
-            <div class="work-square-item">
-                <div class="work-square-item-small">
-             
-                    <h6>UX | UI DESIGN</h6>
+
+
+            <div class="work-list-group">
+                <div class="work-list-group-item">
+                    <img src="/img/medium1.png">
+                </div>
+                <div class="work-list-group-details">
+                    <h3>Github User Information</h3>
+                    <p>Interface Design and Development </p>
                 </div>
             </div>
+
+
         </div>
-        <div class="work-square">
-            <div class="work-square-item">
-                <div class="work-square-item-small">
-                    
-                    <h6>Web Development</h6>
-                </div>
-            </div>
-            <div class="work-square-item">
-                <div class="work-square-item-small flex-start">
-             
-                    <h6>Web Development</h6>
-                </div>
-            </div>
-            <div class="work-square-item">
-                <div class="work-square-item-small flex-start">
-                    
-                    <h6>Web Development</h6>
-                </div>
-            </div>
-        </div>
+
 
 
     </div>
 </template>
 
 
-<script>
 
-    export default {
-        data () {
-            return {
-                skills:[
-                    { lang:"HTML5",      	percent:100,   color:"#d9832e"	},
-                    { lang:"CSS3", 			percent:100,   color:"#d9832e"	},
-                    { lang:"JAVASCRIPT", 	percent:60,    color:"#d9832e"	},
-                    { lang:"VUE",	        percent:80,    color:"#d9832e"	},
-                    { lang:"REACT",		 	percent:40,    color:"#d9832e"	},
-                    { lang:"FIGMA", 		percent:60,    color:"#d9832e"	}
-                ]
-            }
-        }
-    }
+
+<script>
 
 </script>
 
 
 
+
 <style lang="scss">
+
     .work {
         background-color: #fbfbfd;
         margin-left: 95px;
         width: calc(100% - 95px);
-        height: 100vh;
+        height: auto;
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
+        align-items: start;
 
-        &-block {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            flex-direction: row;
-            align-items: flex-start;
+        &-title {
+            width: 100%;
+            height: 25vh;
+            background-color: transparent;
             margin-left: 9%;
             padding-top: 75px;
-            width: 51%;
-            height: 100vh;
+
+            & h1 {
+                text-transform: uppercase;
+                font-weight: 800;
+                font-size: 32px;
+                margin-bottom: 20px;
+                height: 60px;
+                display: block;
+
+                & span {
+                    border-bottom: 2px solid #d9832e;
+                    margin-top: 10px;
+                    display: inline-block;
+                    height: 50px;
+                }
+            }
+
+            & h3 {
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 300;
+                letter-spacing: 2px;
+            }
+
+        }
 
 
+        .work-list {
+            font-family: 'Avenir', Helvetica, Arial, sans-serif;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: start;
 
-            &-title {
+            &-group {
+                margin-top: 10vh;
                 width: 100%;
-                height: auto;
-                background-color: transparent;
-
-                & h1 {
-                    text-transform: uppercase;
-                    font-weight: 800;
-                    font-size: 32px;
-                    margin-bottom: 20px;
-                    height: 60px;
-                    display: block;
-
-                    & span {
-                        border-bottom: 2px solid #d9832e;
-                        margin-top: 10px;
-                        display: inline-block;
-                        height: 50px;
-                    }
-                }
-
-                & h3 {
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    font-weight: 300;
-                    letter-spacing: 2px;
-                }
-
-            }
-
-
-
-
-
-            .box {
-                width: 100%;
-                padding: 0px;
+                padding-left: 9%;
+                padding-right: 9%;
+                height: 40vh;
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                align-items: center;
-
-                &-list {
-
-
-                    &-item {
-                        margin-top: 30px;
-
-                        &:first-child {
-                            margin-top: 0px;
-                        }
-                    }
-                }
-
-            }
-
-            ul li {
-                list-style-type: none;
-            }
-
-            .lang {
-                font-size: 16px;
-                font-weight: 600;
-                letter-spacing: .5px;
-                display: flex;
+                flex-direction: row;
                 flex-wrap: nowrap;
                 justify-content: flex-start;
                 align-items: center;
-                width: 50%;
-                margin-bottom: 10px;
 
+                &:first-child {
+                    margin-top: 0;
+                }
 
-            }
+                &-item {
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    height: 40vh;
 
-            .percent {
-                width: 50%;
-                font-weight: 600;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                margin-bottom: 10px;
-                color: rgba(0,0,0,0.55);
-            }
-
-            .bar {
-                width: 100%;
-                background: #dddddd;
-                border-radius: 35px;
-                overflow: hidden;
-                height: 5px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                align-items: center;
-            }
-
-            .progress {
-                height: 5px;
-                width: 100%;
-            }
-        }
-
-
-
-
-        &-square {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-left: 10%;
-            width: 40%;
-            height: 100vh;
-
-            &:last-child {
-                margin-left: 0%;
-            }
-
-            &-item {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                width: 80%;
-                margin-right: 10%;
-                margin-top: 5%;
-                margin-bottom: 5%;
-                height: 25%;
-                border-radius: 4px;
-                border: 1px solid rgba(0,0,0,.07);
-                -webkit-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.7);
-                -moz-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.7);
-                box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.15);
-
-                &-small {
-
-                    i {
-                        font-size: 50px;
-                        color: #999;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 50%;
-                        margin-bottom: 20px;
-                    }
-
-                    h6{
-                        font-size: 13px;
-                        font-weight: 700;
-                        color: #555a72;
-                        text-align: center;
-                        letter-spacing: .4px;
-                        text-transform: uppercase;
+                    img {
+                        border-radius: 4px;
+                        width: 90%;
+                        height: auto;
+                        object-fit: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.20);
+                        -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.20);
+                        box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.20);
                     }
                 }
 
+                &-details {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    width: 40%;
+                    margin-left: 10%;
+                    height: 40vh;
+                    padding-top: 90px;
 
+                    h3 {
+                        display: block;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        color: #4a4a4a;
+                    }
+
+                    p {
+                        display: block;
+                        width: 100%;
+                        margin-top: 5px;
+                        color: #4a4a4a;
+                    }
+                }
             }
 
+
+
+            &-group-r {
+                flex-direction: row-reverse;
+
+                &-details-r {
+                    margin-right: 10%;
+                    margin-left: 0;
+                }
+            }
         }
-
-
-
 
 
 
     }
-
 </style>
+
+
