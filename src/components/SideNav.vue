@@ -10,7 +10,7 @@
 
 
     <router-link
-            class="p-0"
+            class="p-0 resp"
             to="/"
             active-class="activeClass"
             exact >
@@ -23,7 +23,7 @@
 
 
     <router-link
-            class="p-0"
+            class="p-0 resp"
             to="/about"
             active-class="activeClass"
             exact >
@@ -38,7 +38,7 @@
 
 
     <router-link
-            class="p-0"
+            class="p-0 resp"
             to="/work"
             active-class="activeClass"
             exact >
@@ -53,7 +53,7 @@
 
 
     <router-link
-            class="p-0"
+            class="p-0 resp"
             to="/skills"
             active-class="activeClass"
             exact >
@@ -68,7 +68,7 @@
 
 
     <router-link
-            class="p-0"
+            class="p-0 resp"
             to="/blog"
             active-class="activeClass"
             exact >
@@ -210,6 +210,34 @@
 
 
   /* Responsive */
+
+  @media (max-width: 992px) {
+    .sidenav {
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-end;
+
+
+      &-name {
+        background-color: blue;
+        width: 15%;
+      }
+
+      &-item {
+        background-color: red;
+      }
+    }
+
+    .resp {
+      background-color: blue;
+      width: 15%;
+    }
+
+  }
 
 
 </style>

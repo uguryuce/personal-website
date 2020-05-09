@@ -17,8 +17,8 @@
                     <img src="/img/ug-heyb.png">
                 </div>
                 <div class="work-list-group-details">
-                    <h3>Github User Information</h3>
-                    <p>Interface Design and Development </p>
+                    <h3>Heybooster</h3>
+                    <p>User Interface Design & Front End Development</p>
                 </div>
             </div>
 
@@ -29,7 +29,7 @@
                 </div>
                 <div class="work-list-group-details work-list-group-r-details-r">
                     <h3>Github User Information</h3>
-                    <p>Interface Design and Development </p>
+                    <p>Development and Design</p>
                 </div>
             </div>
 
@@ -39,10 +39,45 @@
                     <img src="/img/medium1.png">
                 </div>
                 <div class="work-list-group-details">
-                    <h3>Github User Information</h3>
-                    <p>Interface Design and Development </p>
+                    <h3>Medium Post</h3>
+                    <p>User Interface Design & Frontend Development</p>
                 </div>
             </div>
+
+
+            <div class="work-list-group work-list-group-r">
+                <div class="work-list-group-item">
+                    <img src="/img/yuce-n.png">
+                </div>
+                <div class="work-list-group-details work-list-group-r-details-r">
+                    <h3>Yüce Elektrik</h3>
+                    <p>User Interface Design & Frontend Development</p>
+                </div>
+            </div>
+
+
+
+            <div class="work-list-group">
+                <div class="work-list-group-item">
+                    <img src="/img/eb.jpg">
+                </div>
+                <div class="work-list-group-details">
+                    <h3>Everest Bilim</h3>
+                    <p>Interface Design and  Frontend Development </p>
+                </div>
+            </div>
+
+
+            <div class="work-list-group work-list-group-r">
+                <div class="work-list-group-item">
+                    <img src="/img/ug-mp3.png">
+                </div>
+                <div class="work-list-group-details work-list-group-r-details-r">
+                    <h3>Youtube MP3 App</h3>
+                    <p>Interface Design and Frontend Development </p>
+                </div>
+            </div>
+
 
 
         </div>
@@ -168,12 +203,15 @@
                         width: 100%;
                         margin-bottom: 10px;
                         color: #4a4a4a;
+                        letter-spacing: 1px;
                     }
 
                     p {
                         display: block;
                         width: 100%;
+
                         margin-top: 5px;
+                        font-size: 1.1em;
                         color: #4a4a4a;
                     }
                 }
