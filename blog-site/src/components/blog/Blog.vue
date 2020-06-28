@@ -1,0 +1,104 @@
+<template>
+  <div class="blog">
+    <div class="blog-item">
+
+      <div class="blog-item-text">
+        <h1>Blog Yazısı Örneği</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga harum quis ratione repellat!
+          Ad atque, aut, corporis dolore dolorum libero</p>
+        <span>Javascript</span>
+      </div>
+
+      <div class="blog-item-image">
+        <img src="src/assets/img/p2.jpeg">
+      </div>
+
+    </div>
+
+    <div class="blog-item">
+
+      <div class="blog-item-text">
+        <h1>Blog Yazısı Örneği</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga harum quis ratione repellat!
+          Ad atque, aut, corporis dolore dolorum libero, necessitatibus nihil odit optio placeat quaerat ratione!</p>
+        <span>Vue JS</span>
+      </div>
+
+      <div class="blog-item-image">
+        <img src="src/assets/img/p3.jpeg">
+      </div>
+
+    </div>
+
+  </div>
+</template>
+
+<script>
+
+</script>
+
+<style lang="scss">
+
+  .blog {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 100%;
+      height: auto;
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      padding-top: 40px;
+      border-top: 2px solid #eeeeee;
+
+      &:last-child {
+        border-bottom: 2px solid #eeeeee;
+      }
+
+      &-text {
+        width: 52.5%;
+        margin-right: 5%;
+
+        h1 {
+          font-size: 26px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          font-weight: 900;
+          text-transform: capitalize;
+          letter-spacing: .3px;
+
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 1.6;
+          color: #333333;
+        }
+
+        span {
+          width: 100%;
+          display: block;
+          color: #68686890;
+        }
+      }
+
+      &-image {
+        width: 42.5%;
+        height: auto;
+
+        img {
+          width: 100%;
+          max-height: 20vh;
+          background-size: cover;
+          object-fit: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+</style>
