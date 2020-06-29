@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="footer-code">
-      <p>Bu sitenin kaynak kodları için <a>github.io</a></p>
+      <p>Bu sitenin kaynak kodları için <a href="https://github.com/uguryuce/personal-website/tree/master/blog-site" target="_blank">tıklayın</a></p>
     </div>
   </div>
 </template>

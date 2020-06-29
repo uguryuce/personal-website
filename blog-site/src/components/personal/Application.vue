@@ -3,17 +3,20 @@
 
 
     <div class="application-image">
-      <img src="/src/assets/img/github-user.png">
+      <img src="/src/assets/img/ug-heyb.png">
     </div>
 
     <div class="application-content">
 
       <div class="application-content-text">
-        <h1>Github User Information</h1>
-        <p>Github kullanıcı adıyla bilgilerin görüntülendiği uygulama
+        <h1>heyBooster</h1>
+        <p>Arayüz kodlanması ve geliştirilmesi
         </p>
       </div>
     </div>
+
+
+
 
 
     <div class="application-image">
@@ -31,18 +34,22 @@
 
 
 
+
+
+
     <div class="application-image">
-      <img src="/src/assets/img/ug-heyb.png">
+      <img src="/src/assets/img/github-user.png">
     </div>
 
     <div class="application-content">
 
       <div class="application-content-text">
-        <h1>heyBooster</h1>
-        <p>Arayüz kodlanması ve geliştirilmesi
+        <h1>Github User Information</h1>
+        <p>Github kullanıcı adıyla bilgilerin görüntülendiği uygulama
         </p>
       </div>
     </div>
+
 
 
 

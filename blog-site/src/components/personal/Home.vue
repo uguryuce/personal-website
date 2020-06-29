@@ -12,7 +12,7 @@
           Sıkıcı gelen okul dersleriyle birlikte Frontend alanına yöneldim ve 2 yıldır bu alanda çalışmalarımı sürdürmekteyim.
         </p>
 
-        <p>Oldukça düz bir insanım, merak uyandıracak veya size burada yazılanları hevesle okutacak bir özelliğim yok. Onun için bu kadarı kadar yeterli diye düşünüyorum :)
+        <p>Oldukça düz bir insanım, merak uyandıracak veya size burada yazılanları hevesle okutacak bir özelliğim yok. Onun için bu kısımda bu kadarı yeterli diye düşünüyorum :)
         </p>
       </div>
     </div>
@@ -70,10 +70,17 @@
           line-height: 1.6;
           letter-spacing: .2px;
           font-size: 18px;
-          color: #424242;
+          color: #212121;
           font-weight: 300;
         }
       }
+    }
+  }
+
+  $breakpoint-tablet: 768px;
+  @media (max-width: $breakpoint-tablet) {
+    .home{
+      background-color: black;
     }
   }
 

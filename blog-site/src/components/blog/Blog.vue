@@ -4,8 +4,8 @@
 
       <div class="blog-item-text">
         <h1>Blog Yazısı Örneği</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga harum quis ratione repellat!
-          Ad atque, aut, corporis dolore dolorum libero</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          At blanditiis eos harum magni optio tempora? Autem, beatae dolorum iste laudantium magnam pariatur quod rem ut? Atque consequuntur expedita iure voluptate.</p>
         <span>Javascript</span>
       </div>
 
@@ -59,16 +59,20 @@
       }
 
       &-text {
-        width: 52.5%;
+        width: 55%;
         margin-right: 5%;
 
         h1 {
-          font-size: 26px;
+          font-size: 24px;
           padding-top: 4px;
           padding-bottom: 4px;
           font-weight: 900;
           text-transform: capitalize;
-          letter-spacing: .3px;
+
+          &:hover {
+            text-decoration:underline;
+            cursor: pointer;
+          }
 
         }
 
@@ -87,12 +91,12 @@
       }
 
       &-image {
-        width: 42.5%;
+        width: 40%;
         height: auto;
 
         img {
           width: 100%;
-          max-height: 20vh;
+          max-height: 25vh;
           background-size: cover;
           object-fit: cover;
           background-repeat: no-repeat;

@@ -14,6 +14,8 @@
 
 <script>
 
+
+
   import Navigation from "./components/shared/Navigation";
   import Footer from "./components/shared/Footer";
 
@@ -29,11 +31,13 @@
 
 <style>
 
+
   .app {
-    width: 850px;
+    width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
+
 
   .fade-enter{
     opacity: 0;
@@ -65,5 +69,30 @@
       transform: translateY(20px);
     }
   }
+
+
+
+  .app {
+    background-color: orange;
+  }
+
+
+  @media (min-width: 0px) and (max-width: 768px){
+    .app {
+      width: 90%;
+      background-color: blue;
+    }
+  }
+
+  @media (max-width: 1096px) and (min-width: 768px){
+    .app {
+      width: 700px;
+      background-color: red;
+    }
+  }
+
+
+
+
 
 </style>

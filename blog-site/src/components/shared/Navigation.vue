@@ -56,7 +56,7 @@
           </router-link>
         </li>
 
-        <li>
+        <li style="display: none">
           <router-link
             class=""
             to="/work-space"
@@ -68,9 +68,9 @@
           </router-link>
         </li>
 
-        <li><a target="_blank">Github</a></li>
-        <li><a target="_blank">Twitter</a></li>
-        <li><a target="_blank">Linkedin</a></li>
+        <li><a target="_blank" href="https://github.com/uguryuce">Github</a></li>
+        <li><a target="_blank" href="https://twitter.com/uguryuceee">Twitter</a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/ugur-yuce/">Linkedin</a></li>
       </ul>
     </div>
   </div>
@@ -82,6 +82,10 @@
 
 <style lang="scss">
 
+
+  //$tablet : 1096px;
+  //$mobile : 768px;
+
   .activeClass {
     .activeC {
       a {
@@ -91,11 +95,14 @@
     }
   }
 
+
+
   .navigation {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 30vh;
+    height: auto;
+    background-color: transparent;
 
     &-name {
       width: 100%;
@@ -128,7 +135,8 @@
 
 
         li {
-          padding: 5px 15px;
+          padding-top: 5px;
+          padding-right: 15px;
 
           a {
             font-weight: 600;
@@ -136,7 +144,8 @@
 
             &:hover {
               text-decoration: none;
-              color: #666666;
+              padding-bottom: 5px;
+              border-bottom: 1px solid black;
             }
           }
 
@@ -147,5 +156,90 @@
       }
     }
   }
+
+
+/*
+  @media (max-width: $tablet) and (min-width: $mobile){
+    .navigation{
+      height: 30vh;
+      background-color: red;
+
+      &-name {
+        height: 10vh;
+        padding-top: 50px;
+
+        h1 {
+          font-size: 130px;
+        }
+      }
+
+      &-list {
+        height: 20vh;
+
+        ul {
+          justify-content: flex-start;
+          padding-bottom: 5vh;
+          border-bottom: 1px solid #999999;
+
+          li {
+            padding-right: 50px;
+            padding-top: 35px;
+
+            a {
+              letter-spacing: .2px;
+              font-size: 36px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+
+*/
+
+/*
+  @media screen and (max-width: 768px){
+    .navigation{
+      height: 30vh;
+
+      &-name {
+        height: 10vh;
+        padding-top: 50px;
+
+        h1 {
+          font-size: 70px;
+        }
+      }
+
+      &-list {
+        height: 20vh;
+
+        ul {
+          justify-content: flex-start;
+          padding-bottom: 5vh;
+          border-bottom: 1px solid #999999;
+
+          li {
+            padding-right: 50px;
+            padding-top: 35px;
+
+            a {
+              letter-spacing: .2px;
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
 
 </style>
