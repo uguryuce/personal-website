@@ -1,0 +1,10 @@
+
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="100%" id="blobSvg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+      <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+    </linearGradient>
+  </defs>
+  <path id="blob" d="M451.5,298.5Q452,347,415,378.5Q378,410,340,444.5Q302,479,249.5,480.5Q197,482,155,451.5Q113,421,91.5,379Q70,337,37.5,293.5Q5,250,23.5,200Q42,150,68.5,102.5Q95,55,146.5,37.5Q198,20,249,26.5Q300,33,350,47.5Q400,62,424,108.5Q448,155,449.5,202.5Q451,250,451.5,298.5Z" fill="url(#gradient)"></path>
+</svg>

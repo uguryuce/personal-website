@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": "1",
-      "img": "../src/assets/img/p2.jpeg",
+      "img": "../src/assets/img/blob-min.svg",
       "title": "Vue.js ile Basit Grafik Kullanımı",
       "preview": "Merhaba, son blog yazımın üzerinden biraz zaman geçmiş.heybooster'da ihtiyacımız olan ve kullandığımız bir kütüphaneden bahsedeceğim.",
       "date": "01-04-2020",
