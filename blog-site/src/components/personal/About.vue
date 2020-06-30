@@ -54,11 +54,11 @@
         }
 
         p {
-          line-height: 1.6;
-          letter-spacing: .2px;
           font-size: 16px;
+          font-weight: 400;
+          line-height: 1.6;
           color: currentColor;
-          font-weight: 300;
+          opacity: 0.8;
         }
       }
 

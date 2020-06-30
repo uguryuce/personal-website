@@ -1,24 +1,39 @@
 <template>
   <div class="blog">
-    <div class="blog-item">
+
+
+    <div class="blog-item" v-for="post in posts">
 
       <div class="blog-item-text">
-        <h1>Blog Yazısı Örneği</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          At blanditiis eos harum magni optio tempora? Autem, beatae dolorum iste laudantium magnam pariatur quod rem ut? Atque consequuntur expedita iure voluptate.</p>
-        <span>Javascript</span>
+
+        <router-link tag="h1" :to="{ name: 'Post', params: { id: post.id } }">{{ post.title }}</router-link>
+
+        <p>{{ post.preview }}</p>
+        <p>Paylaşılma Tarihi: {{ post.date }}</p>
+
       </div>
 
+
+
       <div class="blog-item-image">
-        <img src="src/assets/img/p2.jpeg">
+        <img :src="post.img" alt="image">
       </div>
 
     </div>
 
-    <div class="blog-item">
+
+
+    <!--<div class="blog-item">
 
       <div class="blog-item-text">
-        <h1>Blog Yazısı Örneği</h1>
+        <router-link
+          tag="h1"
+          to="/post/2"
+          exact
+        >
+          Blog Yazısı Örneği 2
+        </router-link>
+
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga harum quis ratione repellat!
           Ad atque, aut, corporis dolore dolorum libero, necessitatibus nihil odit optio placeat quaerat ratione!</p>
         <span>Vue JS</span>
@@ -28,12 +43,26 @@
         <img src="src/assets/img/p3.jpeg">
       </div>
 
-    </div>
+    </div> -->
 
   </div>
 </template>
 
 <script>
+  import jsonPosts from '../../statics/posts/posts';
+
+  export default {
+    name: "Blog",
+    data() {
+      return {
+        posts: [],
+      }
+    },
+    created() {
+      this.posts = jsonPosts.posts;
+      window.scrollTo(0,0);
+    }
+  }
 
 </script>
 
@@ -77,10 +106,16 @@
         }
 
         p {
-          font-size: 18px;
-          font-weight: 300;
+          font-size: 16px;
+          font-weight: 400;
           line-height: 1.6;
           color: currentColor;
+          opacity: 0.9;
+
+          &:nth-of-type(2) {
+            opacity: 0.5;
+            font-size: 16px;
+          }
         }
 
         span {

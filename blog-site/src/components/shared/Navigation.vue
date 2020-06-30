@@ -39,7 +39,7 @@
             active-class="activeClass"
             exact>
             <div class="activeC">
-              <a>Blog</a>
+              <a>Yazılar</a>
             </div>
           </router-link>
         </li>

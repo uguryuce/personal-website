@@ -51,7 +51,8 @@
 
     created() {
       this.nightMode = JSON.parse(localStorage.getItem("nightMode"));
-    }
+    },
+
 
 
   }
