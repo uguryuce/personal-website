@@ -90,7 +90,7 @@
     .activeC {
       a {
         padding-bottom: 5px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid currentColor;
       }
     }
   }
@@ -99,6 +99,7 @@
 
   .navigation {
     display: flex;
+    align-items:center;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
@@ -140,12 +141,12 @@
 
           a {
             font-weight: 600;
-            color: black;
+            color: currentColor;
 
             &:hover {
               text-decoration: none;
               padding-bottom: 5px;
-              border-bottom: 1px solid black;
+              border-bottom: 1px solid currentColor;
             }
           }
 
@@ -158,36 +159,38 @@
   }
 
 
-/*
-  @media (max-width: $tablet) and (min-width: $mobile){
+
+  @media (max-width: 1096px) and (min-width: 768px){
     .navigation{
-      height: 30vh;
-      background-color: red;
+      height: auto;
+      margin-bottom: 10px;
 
       &-name {
-        height: 10vh;
+        height: 20vh;
         padding-top: 50px;
 
         h1 {
-          font-size: 130px;
+          font-size: 60px;
         }
       }
 
       &-list {
-        height: 20vh;
+        height: calc(20vh - 20px);
+        align-items: flex-start;
+        padding-bottom: 5vh;
+        border-bottom: none;
 
         ul {
           justify-content: flex-start;
-          padding-bottom: 5vh;
-          border-bottom: 1px solid #999999;
+
 
           li {
             padding-right: 50px;
-            padding-top: 35px;
+            padding-top: 20px;
 
             a {
               letter-spacing: .2px;
-              font-size: 36px;
+              font-size: 18px;
               font-weight: 500;
             }
           }
@@ -196,33 +199,35 @@
     }
   }
 
-*/
 
-/*
-  @media screen and (max-width: 768px){
+
+
+  @media (min-width: 0px) and (max-width: 768px){
     .navigation{
-      height: 30vh;
+      height: 32.5vh;
 
       &-name {
-        height: 10vh;
+        height: calc(15vh - 50px);
         padding-top: 50px;
 
         h1 {
-          font-size: 70px;
+          font-size: 60px;
         }
       }
 
       &-list {
-        height: 20vh;
+        height: calc(17.5vh - 15px);
+        align-items: flex-start;
+        //padding-bottom: 5vh;
+        //border-bottom: 1px solid #99999980;
 
         ul {
           justify-content: flex-start;
-          padding-bottom: 5vh;
-          border-bottom: 1px solid #999999;
+
 
           li {
-            padding-right: 50px;
-            padding-top: 35px;
+            padding-right: 45px;
+            padding-top: 15px;
 
             a {
               letter-spacing: .2px;

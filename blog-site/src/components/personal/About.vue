@@ -26,8 +26,6 @@
 <style lang="scss" scoped>
 
   .about {
-    overflow-x:auto;
-    scroll-snap-type: y mandatory;
     height: auto;
 
     &-item {
@@ -35,10 +33,10 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      height: 60vh;
-      margin-bottom: 10vh;
+      height: auto;
+      margin-bottom: 5vh;
+      margin-top: 5vh;
       align-items: center;
-      scroll-snap-align: start;
 
       &-text {
         width: 65%;
@@ -59,13 +57,13 @@
           line-height: 1.6;
           letter-spacing: .2px;
           font-size: 16px;
-          color: #212121;
+          color: currentColor;
           font-weight: 300;
         }
       }
 
       &-image {
-        background: #99999940;
+        background: #e5e5e5;
         //background-image: url("/src/assets/img/1.jpeg");
         //background-repeat: no-repeat;
         background-size: cover;
@@ -88,6 +86,38 @@
 
       }
     }
+  }
+
+  @media (max-width: 1096px) and (min-width: 768px){
+    .about{
+
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 768px){
+    .about{
+
+      &-item {
+        margin-top: 2.5vh;
+
+        &-text {
+          width: 100%;
+
+          h1 {
+            font-size: 24px;
+          }
+        }
+
+        &-image {
+          margin-top: 2.5vh;
+          width: 70%;
+        }
+
+      }
+
+
+    }
+
   }
 
 </style>

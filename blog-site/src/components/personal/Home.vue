@@ -21,6 +21,7 @@
 
 <script>
 
+
 </script>
 
 <style lang="scss" scoped>
@@ -70,18 +71,25 @@
           line-height: 1.6;
           letter-spacing: .2px;
           font-size: 18px;
-          color: #212121;
           font-weight: 300;
         }
       }
     }
   }
 
-  $breakpoint-tablet: 768px;
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: 1096px) and (min-width: 768px){
     .home{
-      background-color: black;
+
     }
+  }
+
+  @media (min-width: 0px) and (max-width: 768px){
+    .home{
+      &-image {
+        height: 40vh;
+      }
+    }
+
   }
 
 </style>

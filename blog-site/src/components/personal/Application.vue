@@ -123,7 +123,8 @@
           line-height: 1.6;
           letter-spacing: .2px;
           font-size: 18px;
-          color: #424242;
+          color: currentColor;
+          opacity: 0.8;
           font-weight: 300;
         }
       }

@@ -80,13 +80,14 @@
           font-size: 18px;
           font-weight: 300;
           line-height: 1.6;
-          color: #333333;
+          color: currentColor;
         }
 
         span {
           width: 100%;
           display: block;
-          color: #68686890;
+          color: currentColor;
+          opacity: 0.5;
         }
       }
 
@@ -104,5 +105,34 @@
         }
       }
     }
+  }
+
+  @media (max-width: 1096px) and (min-width: 768px){
+    .blog{
+
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 768px){
+    .blog{
+      &-item {
+
+        &-text {
+          width: 100%;
+
+          span {
+            margin-bottom: 10px;
+          }
+        }
+        &-image {
+          width: 100%;
+
+          img {
+            height: 20vh;
+          }
+        }
+      }
+    }
+
   }
 </style>

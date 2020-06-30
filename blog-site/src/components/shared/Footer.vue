@@ -16,14 +16,15 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 15vh;
+    height: 20vh;
     justify-items: flex-start;
     align-items: flex-end;
     padding-bottom: 20px;
 
     &-code {
-
       p {
+        margin: 0;
+        padding: 0;
         color: #999999;
       }
     }
