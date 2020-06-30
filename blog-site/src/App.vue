@@ -1,6 +1,6 @@
 <template>
 
-  <div style="min-height: 100vh" class="app" :class="{'theme-dark' : nightMode}">
+  <div style="min-height: 100vh;" class="app" :class="{'theme-dark' : nightMode}">
     <section>
 
 
@@ -60,8 +60,6 @@
 </script>
 
 <style>
-
-
 
 
 

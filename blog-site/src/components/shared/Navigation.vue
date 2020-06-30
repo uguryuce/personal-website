@@ -102,12 +102,14 @@
     align-items:center;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
     height: auto;
     background-color: transparent;
 
     &-name {
       width: 100%;
-      height: 20vh;
+      height: auto;
       display: flex;
       align-items: center;
 
@@ -120,9 +122,10 @@
 
     &-list {
       width: 100%;
-      height: 10vh;
+      height: auto;
       display:flex;
       flex-wrap: wrap;
+      margin-top: 20px;
       align-items: center;
       justify-content: space-between;
 

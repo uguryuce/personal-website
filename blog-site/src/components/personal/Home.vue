@@ -38,7 +38,7 @@
 
     &-image {
       width: 100%;
-      height: 50vh;
+      min-height: 50vh;
       display: flex;
       background-position: 50% 50%;
       justify-content: center;
@@ -86,7 +86,7 @@
   @media (min-width: 0px) and (max-width: 768px){
     .home{
       &-image {
-        height: 40vh;
+        min-height: 40vh;
       }
     }
 
