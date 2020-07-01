@@ -34,7 +34,7 @@
       flex-wrap: wrap;
       justify-content: center;
       height: auto;
-      margin-bottom: 5vh;
+      margin-bottom: 3vh;
       margin-top: 5vh;
       align-items: center;
 

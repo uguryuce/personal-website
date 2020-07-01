@@ -2,8 +2,8 @@
   <div>
     <div>
 
-      <BasicChart v-if="id == 1"></BasicChart>
-      <CoronaCounterApp v-if="id == 2"></CoronaCounterApp>
+      <Deneme1 v-if="id == 1"></Deneme1>
+      <Deneme2 v-if="id == 2"></Deneme2>
 
     </div>
   </div>
@@ -11,14 +11,14 @@
 
 <script>
 
-  import BasicChart from "./posts/BasicChart";
-  import CoronaCounterApp from "./posts/CoronaCounterApp";
+  import Deneme1 from "./posts/Deneme1";
+  import Deneme2 from "./posts/Deneme2";
 
   export default {
     name: "Post",
     components: {
-      CoronaCounterApp,
-      BasicChart
+      Deneme2,
+      Deneme1
     },
     data() {
       return {

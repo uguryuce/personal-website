@@ -15,6 +15,8 @@
         <button class="dark-mode-btn" v-else @click="nightMode = !nightMode"><i class="fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;</button>
       </label>
 
+
+
       <app-footer></app-footer>
 
 
@@ -43,6 +45,7 @@
       }
     },
 
+
     watch : {
       nightMode : function () {
         localStorage.setItem("nightMode", JSON.stringify(this.nightMode));
@@ -60,7 +63,6 @@
 </script>
 
 <style>
-
 
 
   .fade-enter{
@@ -96,8 +98,6 @@
 
 
 
-
-
   .app section {
     width: 768px;
     margin-left: auto;
@@ -108,7 +108,7 @@
 
 
   .app.theme-dark {
-    color: #efefef!important;
+    color: #dedede!important;
     transition: all .4s;
     background-color: #1c1e1f!important;
     border-bottom-color: white;
@@ -125,7 +125,7 @@
   }
 
   .dark-mode .dark-mode-btn {
-    background-color: #777;
+    background-color: #999;
     border: none;
     padding:3px 15px 3px 10px;
     border-radius: 35px;

@@ -60,7 +60,6 @@
     },
     created() {
       this.posts = jsonPosts.posts;
-      window.scrollTo(0,0);
     }
   }
 
@@ -161,9 +160,14 @@
         }
         &-image {
           width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
           img {
-            height: 20vh;
+            width: 100%;
+            height: auto;
+            max-height: 30vh;
           }
         }
       }

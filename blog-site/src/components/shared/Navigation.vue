@@ -102,8 +102,8 @@
     align-items:center;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     height: auto;
     background-color: transparent;
 
