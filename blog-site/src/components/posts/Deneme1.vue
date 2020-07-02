@@ -209,9 +209,7 @@
         background-color: #204ecf20;
         color: currentColor;
 
-        &:hover{
-          background-color: #204ecf40;
-        }
+
 
         i {
           color: currentColor;
