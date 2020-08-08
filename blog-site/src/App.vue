@@ -97,7 +97,6 @@
   }
 
 
-
   .app section {
     width: 768px;
     margin-left: auto;
@@ -105,13 +104,18 @@
     position: relative;
   }
 
+  body {
+
+  }
+
+
 
 
   .app.theme-dark {
-    color: #dedede!important;
+    color: #fafafa!important;
     transition: all .4s;
     background-color: #1c1e1f!important;
-    border-bottom-color: white;
+    border-bottom-color: #fafafa;
   }
 
   .dark-mode {
@@ -121,11 +125,11 @@
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
-    padding-bottom: 11px;
+    padding-bottom: 8px;
   }
 
   .dark-mode .dark-mode-btn {
-    background-color: #999;
+    background-color: #333;
     border: none;
     padding:3px 15px 3px 10px;
     border-radius: 35px;
@@ -170,7 +174,7 @@
 
   @media (min-width: 0px) and (max-width: 768px){
     .app section {
-      width: 90%;
+      width: 91%;
 
     }
   }

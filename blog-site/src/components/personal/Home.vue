@@ -38,25 +38,25 @@
 
     &-image {
       width: 100%;
-      min-height: 50vh;
+      height: 50vh;
       display: flex;
-      background-position: 50% 50%;
+      background-position: 50% 100%;
       justify-content: center;
       align-items: flex-end;
       background-image:
-        linear-gradient(to left bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-        url(/src/assets/img/p3.jpeg);
+        linear-gradient(to left bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+        url(/src/assets/img/wl5.jpeg);
       background-repeat: no-repeat;
       background-size: cover;
       object-fit: cover;
-      border-radius: 0px;
+      border-radius: 0;
 
     }
 
     &-content {
       width: 100%;
       height: auto;
-      padding-top: 30px;
+      padding-top: 40px;
 
       &-who-am-ı {
 
@@ -86,7 +86,7 @@
   @media (min-width: 0px) and (max-width: 768px){
     .home{
       &-image {
-        min-height: 40vh;
+        height: 25vh;
       }
     }
 

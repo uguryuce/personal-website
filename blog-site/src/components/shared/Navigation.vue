@@ -2,7 +2,7 @@
 
   <div class="navigation">
     <div class="navigation-name">
-      <h1>Uğur Yüce</h1>
+      <h1>Ugur <span>Yuce</span></h1>
     </div>
 
     <div class="navigation-list">
@@ -89,7 +89,7 @@
   .activeClass {
     .activeC {
       a {
-        padding-bottom: 5px;
+        padding-bottom: 0;
         border-bottom: 1px solid currentColor;
       }
     }
@@ -114,8 +114,8 @@
       align-items: center;
 
       h1 {
-        font-weight: 800;
-        letter-spacing: 2px;
+        font-weight: 900;
+        letter-spacing: 1.5px;
         font-size: 80px;
       }
     }
@@ -148,7 +148,7 @@
 
             &:hover {
               text-decoration: none;
-              padding-bottom: 5px;
+              padding-bottom: 0;
               border-bottom: 1px solid currentColor;
             }
           }
@@ -169,7 +169,6 @@
       margin-bottom: 10px;
 
       &-name {
-        height: 20vh;
         padding-top: 50px;
 
         h1 {
@@ -178,7 +177,6 @@
       }
 
       &-list {
-        height: calc(20vh - 20px);
         align-items: flex-start;
         padding-bottom: 5vh;
         border-bottom: none;
@@ -207,19 +205,24 @@
 
   @media (min-width: 0px) and (max-width: 768px){
     .navigation{
-      height: 32.5vh;
+      height: auto;
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
 
       &-name {
-        height: calc(15vh - 50px);
-        padding-top: 50px;
 
         h1 {
-          font-size: 60px;
+          font-size: 95px;
+          font-weight: 900;
+          letter-spacing: 0;
+          span {
+            display: none;
+          }
         }
       }
 
       &-list {
-        height: calc(17.5vh - 15px);
         align-items: flex-start;
         //padding-bottom: 5vh;
         //border-bottom: 1px solid #99999980;
@@ -229,13 +232,14 @@
 
 
           li {
-            padding-right: 45px;
-            padding-top: 15px;
+            padding-right: 25px;
+
+            padding-top: 12px;
 
             a {
               letter-spacing: .2px;
-              font-size: 16px;
-              font-weight: 500;
+              font-size: 17px;
+              font-weight: 600;
             }
           }
         }

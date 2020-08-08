@@ -28,9 +28,7 @@
       background-position: 50% 15%;
       justify-content: center;
       align-items: flex-end;
-      background-image:
-        linear-gradient(to left bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
-        url(/src/assets/img/work-desk.jpeg);
+
       background-repeat: no-repeat;
       background-size: cover;
       object-fit: cover;
