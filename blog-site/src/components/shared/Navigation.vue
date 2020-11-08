@@ -51,7 +51,7 @@
             active-class="activeClass"
             exact>
             <div class="activeC">
-              <a>Uygulamalar</a>
+              <a>Projeler</a>
             </div>
           </router-link>
         </li>
