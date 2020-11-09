@@ -45,7 +45,7 @@
       align-items: flex-end;
       background-image:
         linear-gradient(to left bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
-        url(/src/assets/img/wl5.jpeg);
+        url(/src/assets/img/comp.jpeg);
       background-repeat: no-repeat;
       background-size: cover;
       object-fit: cover;
