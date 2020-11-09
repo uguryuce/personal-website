@@ -15,6 +15,8 @@
   .footer {
     width: 100%;
     display: flex;
+    position: relative;
+    bottom: 0;
     flex-wrap: wrap;
     height: 20vh;
     justify-items: flex-start;

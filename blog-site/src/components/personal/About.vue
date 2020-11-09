@@ -34,8 +34,6 @@
       flex-wrap: wrap;
       justify-content: center;
       height: auto;
-      margin-bottom: 3vh;
-      margin-top: 5vh;
       align-items: center;
 
       &-text {
@@ -58,6 +56,11 @@
           letter-spacing: .2px;
           font-size: 18px;
           font-weight: 300;
+
+          &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+          }
         }
       }
 
