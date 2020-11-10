@@ -5,9 +5,9 @@
       <div class="about-item-text">
         <h1>Lafı uzatacak olursak</h1>
         <p>Boş vakitlerinde yeni şeyler öğrenmeyi seven, frontend alanına merak sarmış ve bu alanda çalışmalar yapan bir bireyim. Sade kahve, demli çay ve kapalı havaları severim.</p>
-        <p>Bundan 2,3 sene öncesine kadar bilgisayarı genellikle PES13 oynamak için kullanırdım. Bilgisayar Mühendisliği'ni kazandıktan sonra işler değişti tabii. Üniversitedeki dersler
+        <p>Bundan iki üç sene öncesine kadar bilgisayarı genellikle PES13 oynamak için kullanırdım. Bilgisayar Mühendisliği'ni kazandıktan sonra işler değişti tabii. Üniversitedeki dersler
         (elektronik devreler, mikrodenetleyiciler vb.) ilgimi çekmeyince bölümdeki farklı alanlara yönelmek istedim ve frontendi keşfettim. Kullanıcıyla direkt
-         etkileşimi olması ve görsel bir yönünün olması beni etkiledi. Şu an ise bu alandaki çalışmalarımı sürdürmekteyim.</p>
+         etkileşimi olması ve görsel bir yönünün olması beni etkiledi. Şu an ise <a target="_blank" href="https://www.protel.com.tr/">Protel</a>'de Frotend Developer olarak çalışmaktayım</p>
       </div>
 
       <div class="about-item-image">

@@ -2,7 +2,9 @@
 
   <div class="navigation">
     <div class="navigation-name">
-      <h1>Ugur <span>Yuce</span></h1>
+      <router-link to="/" class="navigation-name-title">
+        <h1>Ugur <span>Yuce</span></h1>
+      </router-link>
     </div>
 
     <div class="navigation-list">
@@ -113,11 +115,23 @@
       display: flex;
       align-items: center;
 
-      h1 {
+      &-title {
+        text-decoration: none;
+        color: currentColor;
+        
+        &:hover {
+          color: currentColor;
+          text-decoration: none;
+        }
+
+        h1 {
         font-weight: 900;
         letter-spacing: 1.5px;
         font-size: 80px;
+        }
       }
+
+      
     }
 
     &-list {
